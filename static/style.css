@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#weather-form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+.weather-info {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+#error-message {
+    color: red;
+    margin-top: 20px;
+}
+#weather-result {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#weather-result:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.weather-info {
+    font-family: 'Arial', sans-serif;
+}
+
+#city-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3d72e8;
+    margin-bottom: 10px;
+}
+
+#coordinate,
+#temperature,
+#humidity,
+#pressure,
+#description {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 8px 0;
+}
+
+#coordinate {
+    color: #777;
+}
+
+#temperature {
+    font-size: 1.5rem;
+    color: #e74c3c;
+}
+
+#humidity {
+    font-size: 1.2rem;
+    color: #3498db;
+}
+
+#pressure {
+    font-size: 1.2rem;
+    color: #2ecc71;
+}
+
+#description {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #f39c12;
+}
+
+@media (max-width: 600px) {
+    #weather-result {
+        padding: 15px;
+    }
+
+    #city-name {
+        font-size: 1.5rem;
+    }
+
+    #coordinate,
+    #temperature,
+    #humidity,
+    #pressure,
+    #description {
+        font-size: 1rem;
+    }
+}
